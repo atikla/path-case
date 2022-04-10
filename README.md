@@ -1,5 +1,5 @@
 ### Project 
-##### Order Restful Service [cas-file](https://github.com/atikla/path-case/blob/master/Php%20Developer%20-%20Coding%20Challenge.docx.pdf)
+##### Order Restful Service [case-file](https://github.com/atikla/path-case/blob/master/Php%20Developer%20-%20Coding%20Challenge.docx.pdf)
 
 ### Setup project environment
 - you can run this command after clone git repository
