@@ -1,0 +1,14 @@
+controllers:
+    resource: ../../src/Controller/Stateful/
+    type: annotation
+
+api:
+    resource: ../../src/Controller/Api/
+    type: annotation
+    prefix: '/api/'
+    # this is added to the beginning of all imported route names
+    name_prefix: 'api_'
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

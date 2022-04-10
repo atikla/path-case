@@ -1,0 +1,1519 @@
+{
+	"info": {
+		"_postman_id": "27ddd50e-72e1-4f73-8009-acaf31750388",
+		"name": "path",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "user/register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"laith\",\n    \"lastName\": \"atik\",\n    \"email\": \"laith@atikla.com\",\n    \"password\": \"123456\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/user/register/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"user",
+										"register",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "user/register",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"firstName\": \"laith\",\n    \"lastName\": \"atik\",\n    \"email\": \"laith@atikla.com\",\n    \"password\": \"123456\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/user/register/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"user",
+												"register",
+												""
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.20.2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.0.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 10 Apr 2022 21:15:11 GMT"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"user register done successfully\",\n    \"response\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NDk2MjUzMTEsImV4cCI6MTY0OTk4NTMxMSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibGFpdGhAYXRpa2xhLmNvbSJ9.JzV9NBusUFdCJOTYsTpJoTQSFznsfdKLCMs7m-KWmABJN1ZkuwvtEoXAmTLlLdI2hwIyHYI0vZ93KN78S53D5-BKlh2IV2u_ZmcgrWsg8Soz39W8njA5bYyMaaJWit9bMiRsOUHNCN47meN-PqI3v7yDFaVLMy47lQza2XeUR7X2chdwu_uQLmEj4A79HuKubuDigTjCCwTy-2gTvOGHRmg4NRkLCrBdt2qgMQzqT1Cw5YH06pcUvYAJro8Jtc-xwCtwqNMxaXiUSvPLxzwA0ET5aVvEoUkLxIzYkXcUFlz7Eyhhqd_8M-z5Jv0GU8LFvez57ClhrqFJ_zzgg6TtPw\"\n    }\n}"
+								},
+								{
+									"name": "user/register - email: This value is already used.",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"firstName\": \"laith\",\n    \"lastName\": \"atik\",\n    \"email\": \"laith@atikla.com\",\n    \"password\": \"123456\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}{{base_api}}/user/register/",
+											"host": [
+												"{{base_url}}{{base_api}}"
+											],
+											"path": [
+												"user",
+												"register",
+												""
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.20.2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.0.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 10 Apr 2022 21:19:11 GMT"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 422,\n    \"message\": \"email: This value is already used.\",\n    \"response\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "user/login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"laith@atikla.com\",\n    \"password\": \"123456\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/login_check",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"login_check"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "user/login",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"laith@atikla.com\",\n    \"password\": \"123456\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/login_check",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"login_check"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.20.2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.0.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 10 Apr 2022 21:16:46 GMT"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"user login done successfully\",\n    \"response\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NDk2MjU0MDYsImV4cCI6MTY0OTk4NTQwNiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibGFpdGhAYXRpa2xhLmNvbSJ9.Ge9SmPBZOuMnQfilx7yvKaKbnw1_5ZRoBjo4E4heDkV31h9xIhMYM4TzYp-qi06yTd1bTunROF1zQ6og8ptPXpXvsikE3Nw9q_iRcC76t63PYWH8l_GutEaVnpGE9On_920hd0R6kenIV1tAcBq7w38qjB-HXuD01hJ8a9iYHFlpuvt-1EBhGp-JZrO9zVXbhXBMh9-E6RSCu1O1nFgFjgWC00ASBIVBCu54UmjM4NV7i8AmiVn2DhkyHAIyy_eSW4EC2sjcS6dgQhEbHJNsbOb7xa_gWzLog8TC8xRzaPC4ycLrf7PaEgPtF6-dkXWr4iUQ1oGxjgQVHCsdcr5e5w\"\n    }\n}"
+								},
+								{
+									"name": "user/login - Bad credentials.",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"laith@atikla.com1\",\n    \"password\": \"123456\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}{{base_api}}/login_check",
+											"host": [
+												"{{base_url}}{{base_api}}"
+											],
+											"path": [
+												"login_check"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.20.2"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.0.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 10 Apr 2022 21:18:35 GMT"
+										},
+										{
+											"key": "X-Robots-Tag",
+											"value": "noindex"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 401,\n    \"message\": \"Bad credentials.\",\n    \"response\": []\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "noauth"
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}{{base_api}}/product/?page=1",
+							"host": [
+								"{{base_url}}{{base_api}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/product/?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"product",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:17:00 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"product list page: 1 fetched successfully\",\n    \"response\": {\n        \"products\": [\n            {\n                \"id\": 1,\n                \"name\": \"product name 1\",\n                \"slug\": \"product-name-1\",\n                \"price\": 317.67,\n                \"stock\": 19\n            },\n            {\n                \"id\": 2,\n                \"name\": \"product name 2\",\n                \"slug\": \"product-name-2\",\n                \"price\": 337.45,\n                \"stock\": 5\n            },\n            {\n                \"id\": 3,\n                \"name\": \"product name 3\",\n                \"slug\": \"product-name-3\",\n                \"price\": 487.83,\n                \"stock\": 10\n            },\n            {\n                \"id\": 4,\n                \"name\": \"product name 4\",\n                \"slug\": \"product-name-4\",\n                \"price\": 589.27,\n                \"stock\": 13\n            },\n            {\n                \"id\": 5,\n                \"name\": \"product name 5\",\n                \"slug\": \"product-name-5\",\n                \"price\": 256.95,\n                \"stock\": 1\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{user_auth_tonek}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "store order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderCode\": \"AAA4s6R1Ag53\",\n    \"productId\": 3,\n    \"quantity\": 1,\n    \"address\": \"istanbul, Atasehir OLD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}{{base_api}}/order/",
+							"host": [
+								"{{base_url}}{{base_api}}"
+							],
+							"path": [
+								"order",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "store order - orderCode: This value is already used.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"orderCode\": \"AAA456qagg53\",\n    \"productId\": 3,\n    \"quantity\": 2,\n    \"address\": \"istanbul, Atasehir\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/order/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"order",
+										""
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:17:12 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 422,\n    \"message\": \"orderCode: This value is already used.\",\n    \"response\": []\n}"
+						},
+						{
+							"name": "store order - this product dont have enough stock for this order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"orderCode\": \"AAA4s6qagg53\",\n    \"productId\": 3,\n    \"quantity\": 10000,\n    \"address\": \"istanbul, Atasehir\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										""
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:17:55 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 422,\n    \"message\": \"this product dont have enough stock for this order\",\n    \"response\": []\n}"
+						},
+						{
+							"name": "store order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"orderCode\": \"AAA4s6qagg53\",\n    \"productId\": 3,\n    \"quantity\": 1,\n    \"address\": \"istanbul, Atasehir\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:18:11 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"order stored successfully\",\n    \"response\": {\n        \"order\": {\n            \"orderCode\": \"AAA4S6QAGG53\",\n            \"quantity\": 1,\n            \"amount\": 487.83,\n            \"address\": \"istanbul, Atasehir\",\n            \"shippingDate\": \"2022:04:11 00:00\",\n            \"createdAt\": \"2022:04:10 21:18\",\n            \"updatedAt\": \"2022:04:10 21:18\",\n            \"product\": {\n                \"id\": 3,\n                \"name\": \"product name 3\",\n                \"slug\": \"product-name-3\",\n                \"price\": 487.83,\n                \"stock\": 9\n            },\n            \"user\": {\n                \"firstName\": \"First Name 1\",\n                \"lastName\": \"Last Name1\",\n                \"email\": \"user1@atikla.com\"\n            }\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "list order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}{{base_api}}/order/?page=1",
+							"host": [
+								"{{base_url}}{{base_api}}"
+							],
+							"path": [
+								"order",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list order",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/order/?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"order",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:19:44 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"order list page: 1 fetched successfully\",\n    \"response\": {\n        \"orders\": [\n            {\n                \"orderCode\": \"123456QXGG53\",\n                \"quantity\": 1,\n                \"amount\": 487.83,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": \"2022:04:11 00:00\",\n                \"createdAt\": \"2022:04:10 21:04\",\n                \"updatedAt\": \"2022:04:10 21:04\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            },\n            {\n                \"orderCode\": \"123456QAGG53\",\n                \"quantity\": 2,\n                \"amount\": 975.66,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": \"2022:04:11 00:00\",\n                \"createdAt\": \"2022:04:10 21:04\",\n                \"updatedAt\": \"2022:04:10 21:04\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            },\n            {\n                \"orderCode\": \"AAA456QAGG53\",\n                \"quantity\": 2,\n                \"amount\": 975.66,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": \"2022:04:11 00:00\",\n                \"createdAt\": \"2022:04:10 21:05\",\n                \"updatedAt\": \"2022:04:10 21:05\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            },\n            {\n                \"orderCode\": \"AAA456QAGGT3\",\n                \"quantity\": 2,\n                \"amount\": 975.66,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": null,\n                \"createdAt\": \"2022:04:10 21:06\",\n                \"updatedAt\": \"2022:04:10 21:06\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            },\n            {\n                \"orderCode\": \"AAA4S6QAGG53\",\n                \"quantity\": 1,\n                \"amount\": 487.83,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": \"2022:04:11 00:00\",\n                \"createdAt\": \"2022:04:10 21:18\",\n                \"updatedAt\": \"2022:04:10 21:18\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "show order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}{{base_api}}/order/AAA4S6QAAG53/",
+							"host": [
+								"{{base_url}}{{base_api}}"
+							],
+							"path": [
+								"order",
+								"AAA4S6QAAG53",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show order",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/order/123456QXGG53",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"order",
+										"123456QXGG53"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:20:04 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"order fetched successfully\",\n    \"response\": {\n        \"order\": [\n            {\n                \"orderCode\": \"123456QXGG53\",\n                \"quantity\": 1,\n                \"amount\": 487.83,\n                \"address\": \"istanbul, Atasehir\",\n                \"shippingDate\": \"2022:04:11 00:00\",\n                \"createdAt\": \"2022:04:10 21:04\",\n                \"updatedAt\": \"2022:04:10 21:04\",\n                \"product\": {\n                    \"id\": 3,\n                    \"name\": \"product name 3\",\n                    \"slug\": \"product-name-3\",\n                    \"price\": 487.83,\n                    \"stock\": 9\n                },\n                \"user\": {\n                    \"firstName\": \"First Name 1\",\n                    \"lastName\": \"Last Name1\",\n                    \"email\": \"user1@atikla.com\"\n                }\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "show order - order not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/123456QXGG531",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										"123456QXGG531"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 21:20:13 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 404,\n    \"message\": \"order not found\",\n    \"response\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "update order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"istanbul, Atasehir NEW\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}{{base_api}}/order/AAA4S6R1AG53/",
+							"host": [
+								"{{base_url}}{{base_api}}"
+							],
+							"path": [
+								"order",
+								"AAA4S6R1AG53",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update order - can not update order if shipping date exist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"istanbul, Atasehir NEW\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/AAA4S6QAAG53/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										"AAA4S6QAAG53",
+										""
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 22:26:26 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 422,\n    \"message\": \"can not update order if shipping date exist\",\n    \"response\": []\n}"
+						},
+						{
+							"name": "update order",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"istanbul, Atasehir NEW\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/AAA4S6QAAG53/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										"AAA4S6QAAG53",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 22:32:10 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"order updates successfully\",\n    \"response\": {\n        \"order\": {\n            \"orderCode\": \"AAA4S6QAAG53\",\n            \"quantity\": 1,\n            \"amount\": 99.65,\n            \"address\": \"istanbul, Atasehir NEW\",\n            \"shippingDate\": \"2022:04:11 00:00\",\n            \"createdAt\": \"2022:04:10 22:32\",\n            \"updatedAt\": \"2022:04:10 22:32\",\n            \"product\": {\n                \"id\": 3,\n                \"name\": \"product name 3\",\n                \"slug\": \"product-name-3\",\n                \"price\": 99.65,\n                \"stock\": 16\n            },\n            \"user\": {\n                \"firstName\": \"First Name 1\",\n                \"lastName\": \"Last Name1\",\n                \"email\": \"user1@atikla.com\"\n            }\n        }\n    }\n}"
+						},
+						{
+							"name": "update order - order not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"istanbul, Atasehir NEW\",\n    \"shippingDate\": \"2022-04-11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}{{base_api}}/order/AAA4S6R1AG53/",
+									"host": [
+										"{{base_url}}{{base_api}}"
+									],
+									"path": [
+										"order",
+										"AAA4S6R1AG53",
+										""
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.20.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Apr 2022 22:34:38 GMT"
+								},
+								{
+									"key": "X-Robots-Tag",
+									"value": "noindex"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 404,\n    \"message\": \"order not found\",\n    \"response\": []\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{user_auth_tonek}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}{{base_api}}/laith/",
+					"host": [
+						"{{base_url}}{{base_api}}"
+					],
+					"path": [
+						"laith",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
