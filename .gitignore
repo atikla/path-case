@@ -9,6 +9,7 @@
 ###< symfony/framework-bundle ###
 /docker/data/*
 /.idea/*
+.DS_Store
 
 ###> lexik/jwt-authentication-bundle ###
 /config/jwt/*.pem
