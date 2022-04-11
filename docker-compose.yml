@@ -30,8 +30,6 @@ services:
     container_name: 'path_php'
     build:
       context: './docker/php-fpm'
-    ports:
-      - '9000:9000'
     volumes:
       - './:/var/www/site'
     depends_on:
